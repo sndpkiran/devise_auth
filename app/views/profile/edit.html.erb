@@ -1,0 +1,10 @@
+<h1>Profile#edit</h1>
+<!-- <p>Find me in app/views/profile/edit.html.erb</p> -->
+
+<%= form_for :user_details, url: "/profile/updateUserDetails", :method => :get do |f| %>
+	<%= f.text_field :fname, :value => @current_user_details? @current_user_details.fname : "" %><br>
+	<%= f.text_field :lname, :value => @current_user_details? @current_user_details.lname : ""  %><br>
+	<%= f.date_field :dob, :value => @current_user_details? @current_user_details.dob : ""  %><br>
+	<%= f.select :gender, [["Male", "Male"],["Female", "Female"]] %><br>
+	<%= f.submit "Update" %>
+<% end %>

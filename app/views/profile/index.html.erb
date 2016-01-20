@@ -1,0 +1,24 @@
+<!-- <h1>Profile#index</h1>
+<p>Find me in app/views/profile/index.html.erb</p>
+ -->
+<div class="jumbotron">
+	<center>
+		<h1>Welcome, <%= current_user.email %></h1>
+	</center>
+
+<% if @current_user_details.nil? %>
+	<%= form_for :user, :url => "/profile/update", :method => :get do |f| %>
+	 <%= f.text_field :fname, autofocus: true, :placeholder => "First Name" %><br>
+	 <%= f.text_field :lname, :placeholder => "Last Name" %><br>
+	 <%= f.date_field :dob %><br>
+	 <%= f.select :gender, [["Male", "Male"],["Female", "Female"]] %><br>
+	 <%= f.submit "Submit" %>
+	<% end %>
+<% else %>
+	<p>Name:  <%= @current_user_details.fname + " " + @current_user_details.lname %></p><br>
+	<p>Date of Birth: <%= @current_user_details.dob %></p><br>
+	<p>Gender: <%=  @current_user_details.gender %></p><br>
+<% end %>
+
+</div>
+<br>

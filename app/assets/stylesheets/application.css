@@ -1,0 +1,180 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+body {
+    font-family: Arial;
+    margin: 0;
+    font-size: 1em;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+    width: 300px;
+    padding: 7px;
+    font-size: 1.1em;
+}
+
+input[type='submit'],
+input[type='checkbox'] {
+    width: auto;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #42A5F5;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type='date'] {
+    font-family: arial, sans-serif;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: white;
+}
+
+.navbar-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    /*width: 20%;*/
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar ul li {
+    height: 60px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    /*cursor: pointer;*/
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    /*border: 1px solid white;*/
+}
+
+.active {
+    border-bottom: 5px solid #00695C;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.notice {
+    border: 1px solid #388E3C;
+    color: #388E3C;
+    background-color: #E8F5E9;
+    border-radius: 2px;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*padding-left: 20px;*/
+    padding: 10px 20px 10px 20px;
+    width: 380px;
+    /*vertical-align: middle;*/
+    margin-bottom: 10px;
+}
+
+.alert {
+    border: 1px solid #B71C1C;
+    color: #B71C1C;
+    background-color: #FFEBEE;
+    border-radius: 2px;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    padding: 10px 20px 10px 20px;
+    width: 380px;
+    /*vertical-align: middle;*/
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 400px;
+    background-color: #E0E0E0;
+    color: black;
+    /*margin-top: 60px;*/
+    padding-top: 30px;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    /*margin: 20px 0px 10px 0px;*/
+}
+
+.jumbotron p {
+    font-size: 20px;
+}
+
+.jumbotron a {
+    color: white;
+    border: 2px solid #1565C0;
+    /*padding: 10px;*/
+    display: block;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #1565C0;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.jumbotron a:hover {
+    background-color: #1565C0;
+    color: white;
+}
+
+.jumbotron a:visited {
+    /*background-color: white;*/
+    /*color: white;*/
+}
